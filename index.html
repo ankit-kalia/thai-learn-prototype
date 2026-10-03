@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thai Learn — Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🇹🇭 Thai Learn</h1>
+      <div id="score"></div>
+    </header>
+    <div class="progress-row">
+      <button id="back-btn" class="link-btn" hidden>← Decks</button>
+      <span id="progress">Loading…</span>
+    </div>
+    <div class="progress-bar" id="progress-bar-wrap" hidden>
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+
+    <div id="exercise"></div>
+
+    <p class="notice">
+      Prototype audio uses your browser's built-in text-to-speech (Web Speech API) —
+      Thai voice quality/availability varies by browser. Real recordings come later.
+    </p>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal-card" id="modal-card"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
